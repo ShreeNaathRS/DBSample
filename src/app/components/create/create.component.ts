@@ -30,7 +30,7 @@ export class CreateComponent implements OnInit {
       "Access-Control-Allow-Method":"POST"
       }
     }).subscribe((data)=>{
-      console.log('Reasponse Data : '+data);
+      console.log('Response Data : '+JSON.stringify(data));
     });
   }
 
