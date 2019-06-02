@@ -1,0 +1,1 @@
+connector = require('../../model/dbconnentor');
