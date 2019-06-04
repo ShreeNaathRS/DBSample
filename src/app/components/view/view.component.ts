@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from 'src/app/services/http.service';
 
 @Component({
   selector: 'app-view',
@@ -7,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewComponent implements OnInit {
 
-  users=[{'email':'shreers@ymail.com'},{'email':'rsshreenaath@gmail.com'}];
+  private users=[];
 
-  constructor() { }
+  constructor(private httpService:HttpService) { }
 
   ngOnInit() {
+    this.httpService.getHttp().subscribe((users:JSON)=>{
+      this.users=users["data"];
+    });
   }
-
 }

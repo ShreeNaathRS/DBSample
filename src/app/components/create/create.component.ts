@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControlName, FormBuilder } from 'node_modules/@angular/forms';
+import { FormGroup,  FormBuilder } from 'node_modules/@angular/forms';
 import { HttpService } from 'src/app/services/http.service';
 
 @Component({
