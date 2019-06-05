@@ -1,14 +1,21 @@
+
 <table class="table container">
-  <thead class="thead-light">
+  <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Email</th>
+      <th scope="col">Name</th>
+      <th scope="col">Options</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let user of users;let i=index;">
-      <td scope="row">{{i+1}}</td>
-      <td scope="row">{{user.name}}</td>
+      <th scope="row">{{i}}</th>
+      <td>{{user.name}}</td>
+      <td>
+        <button type = "button" class="btn btn-secondary btn-sm mr-1" [routerLink]="['/edit/',user.id]"><i class="fas fa-user-edit"></i></button>
+        
+      <button type = "button" class="btn btn-sm btn-danger"><i class="fas fa-user-times"></i></button>
+      </td>
     </tr>
   </tbody>
 </table>

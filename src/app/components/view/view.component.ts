@@ -14,6 +14,7 @@ export class ViewComponent implements OnInit {
 
   ngOnInit() {
     this.httpService.getHttp().subscribe((users:JSON)=>{
+      console.log(users["data"]);
       this.users=users["data"];
     });
   }

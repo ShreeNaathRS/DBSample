@@ -8,14 +8,18 @@ import { FilenotfoundComponent } from './components/filenotfound/filenotfound.co
 import { FormsModule } from '../../node_modules/@angular/forms';
 import { ReactiveFormsModule } from '../../node_modules/@angular/forms';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
-import { ViewComponent } from './components/view/view.component'
+import { ViewComponent } from './components/view/view.component';
+import { EditComponent } from './components/edit/edit.component';
+import { GetidPipe } from './pipes/getid.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateComponent,
     FilenotfoundComponent,
-    ViewComponent
+    ViewComponent,
+    EditComponent,
+    GetidPipe
   ],
   imports: [
     BrowserModule,

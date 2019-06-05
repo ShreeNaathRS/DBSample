@@ -17,4 +17,7 @@ export class HttpService {
     return this.httpClient.get(`${this.BASE_URL}/show`);
   }
 
+  getHttpParam(id:number){
+    return this.httpClient.get(`${this.BASE_URL}/show/${id}`);
+  }
 }
