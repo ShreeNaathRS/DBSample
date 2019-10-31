@@ -29,7 +29,7 @@
     "express": "^4.17.1",
     "mysql2": "^1.6.5",
     "rxjs": "~6.4.0",
-    "sequelize": "^5.8.7",
+    "sequelize": "^5.15.1",
     "tslib": "^1.9.0",
     "typescript": "~3.4.3",
     "zone.js": "~0.9.1"
